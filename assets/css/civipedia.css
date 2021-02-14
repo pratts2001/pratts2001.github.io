@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  .section-5{
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  .section-5 .swiper-container {
+    width: 75%;
+    padding-bottom: 50px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 50px;
+  }
+
+  .section-5 .swiper-container .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 35rem;
+    height: 25rem;
+    background: black;
+    border-radius: 1rem;
+   } 
+
+   .section-5 .swiper-slide img{
+     width: 35rem;
+     height: 25rem;
+     border-radius: 0.5rem;
+   }
+
+   .section-5 .swiper-slide img{
+    filter:opacity(70%);
+  }
+
+   .section-5 .swiper-slide-active img{
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.4);
+    filter:opacity(100%);
+  }
+  
+  .section-5 .swiper-button-next{
+    transform: translateX(0rem);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: url(next.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 4rem rgba(255,255,255,0.6);
+    /* transform: translateY(-1.5rem); */
+  }
+
+  .section-5 .swiper-button-prev{
+    transform: translateX(-0rem);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 2rem rgba(255,255,255,0.5);
+    /* transform: translateY(-1.5rem); */
+  }
+
+  .section-5 .swiper-button-next::after,
+  .section-5 .swiper-button-prev::after{
+    display: none;
+  }
+
+  @media screen and (max-width : 1025px){
+    .section-5 .swiper-container {
+      width: 90%;
+    }
+
+    .section-5 .swiper-button-next{
+      display: none;
+    }
+  
+    .section-5 .swiper-button-prev{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width : 800px){
+    .section-5 .swiper-container {
+      width: 90%;
+    }
+
+    .section-5 .swiper-button-next{
+      height: 0rem;
+      width: 0rem;
+      padding: 1.8rem;
+    }
+  
+    .section-5 .swiper-button-prev{
+      height: 0rem;
+      width: 0rem;
+      padding: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width : 450px){
+
+    .section-5 .swiper-container .swiper-slide{
+      width: 20rem;
+      height: 20rem;
+     } 
+  
+     .section-5 .swiper-slide img{
+       width: 20rem;
+       height: 20rem;
+     }
+
+     .section-5 h1{
+      margin-bottom: 0rem;
+      font-size: 3rem;
+    }
+  }
+
+  
